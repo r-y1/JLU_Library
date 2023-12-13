@@ -1,0 +1,21 @@
+<c3p0-config>
+    <!-- 使用默认的配置读取连接池对象 -->
+    <!--    <named-config name="helloC3P0">-->
+    <default-config>
+        <!--  连接参数 -->
+        <property name="driverClass">oracle.jdbc.driver.OracleDriver</property>
+        <!--        <property name="jdbcUrl">jdbc:oracle:oci:@localhost:1521:orcl</property>-->
+<!--        <property name="jdbcUrl">jdbc:oracle:oci:@localhost:1521:orcl</property>-->
+        <property name="jdbcUrl">jdbc:oracle:thin:@localhost:1521:orcl</property>
+        <property name="user">TEST</property>
+        <property name="password">Ren8204516</property>
+<!--        <property name="user">test</property>-->
+<!--        <property name="password">123456</property>-->
+
+        <!-- 连接池参数 -->
+        <property name="initialPoolSize">5</property>
+        <property name="maxPoolSize">10</property>
+        <property name="checkoutTimeout">3000</property>
+    </default-config>
+    <!--    </named-config>-->
+</c3p0-config>
